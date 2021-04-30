@@ -3,6 +3,9 @@ import psycopg2
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "This is home page"
 
 @app.route('/flask', methods=['POST'])
 def index():
