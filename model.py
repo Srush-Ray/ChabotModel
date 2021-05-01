@@ -25,8 +25,8 @@ def home():
 def index():
     asked_question = " "
     try:
-        conn = psycopg2.connect(database="chatbot", user="postgres",
-                                password="srushti6", host="127.0.0.1", port="5432")
+        conn = psycopg2.connect(database="dfl4jabh70qmq2", user="xymanbcpmaetso",
+                                password="380616dfaa56e873b66e3cd42bf259c513a1ed1fb8613aca732bffc7c230f3a5", host="ec2-23-22-191-232.compute-1.amazonaws.com", port="5432")
         asked_question = request.form['message']
         # print("hey", request.args)
         # user = request.args.get('key')
@@ -45,7 +45,7 @@ def index():
             ans_list = []
             id_list = []
             db_cursor = conn.cursor()
-            s = 'SELECT * FROM "Admin_query_table"'
+            s = 'SELECT * FROM "query_table"'
             try:
                 db_cursor.execute(s)
                 # Retrieve records from Postgres into a Python List
