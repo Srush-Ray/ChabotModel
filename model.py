@@ -4,11 +4,11 @@ import psycopg2
 app = Flask(__name__)
 
 @app.route('/')
-def home():
+def index():
     return "This is home page"
 
 @app.route('/flask', methods=['POST'])
-def index():
+def textmodel():
     conn = psycopg2.connect(database="chatbot", user="postgres",
                             password="srushti6", host="127.0.0.1", port="5432")
     print("Opened database successfully")
