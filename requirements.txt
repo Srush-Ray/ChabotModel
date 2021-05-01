@@ -7,7 +7,6 @@ Jinja2
 MarkupSafe
 Werkzeug
 psycopg2
-json
 os
 nltk
 gensim
