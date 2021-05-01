@@ -1,1 +1,2 @@
-web:python model.py​
+web:python model.py​ 
+heroku ps:scale web=1
