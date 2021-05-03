@@ -26,11 +26,11 @@ def index():
     asked_question = " "
     print("ohh haa")
     try:
-        conn = psycopg2.connect(database="d8vvied9p5rnob", user="dyhgctjqbmdgzi",
-                                password="f42f02ba1dec14620f2ee83428f08c834f39edf81ed018d48669ebbfdbc4bb44", host="ec2-23-22-191-232.compute-1.amazonaws.com", port="5432")
+        # conn = psycopg2.connect(database="d8vvied9p5rnob", user="dyhgctjqbmdgzi",
+        #                         password="f42f02ba1dec14620f2ee83428f08c834f39edf81ed018d48669ebbfdbc4bb44", host="ec2-23-22-191-232.compute-1.amazonaws.com", port="5432")
 
-        # conn = psycopg2.connect(database="dfl4jabh70qmq2", user="xymanbcpmaetso",
-        #                         password="380616dfaa56e873b66e3cd42bf259c513a1ed1fb8613aca732bffc7c230f3a5", host="ec2-23-22-191-232.compute-1.amazonaws.com", port="5432")
+        conn = psycopg2.connect(database="dfl4jabh70qmq2", user="xymanbcpmaetso",
+                                password="380616dfaa56e873b66e3cd42bf259c513a1ed1fb8613aca732bffc7c230f3a5", host="ec2-23-22-191-232.compute-1.amazonaws.com", port="5432")
         asked_question = request.form['message']
         # print("hey", request.args)
         # user = request.args.get('key')
